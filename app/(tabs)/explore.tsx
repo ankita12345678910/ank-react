@@ -15,7 +15,7 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Explore</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
+      <h1>This app includes example code to help you get started.</h1>
       <Collapsible title="File-based routing">
         <ThemedText>
           This app has two screens:{' '}
