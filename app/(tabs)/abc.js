@@ -9,7 +9,7 @@ export default function Sum() {
     return (
         <View>
             <Text>{c}</Text>
-            {arr.map((element,index) => (
+            {arr.map((element, index) => (
                 <Text key={index}>{element}</Text>
             ))}
         </View>
