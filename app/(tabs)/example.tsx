@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Example() {
 
@@ -20,8 +20,20 @@ export default function Example() {
         e.preventDefault();
         alert(JSON.stringify(obj))
     }
+    let [data, setData] = useState()
+    useEffect(() => {
+        (async () => {
+            let response = await fetch('https://dummyjson.com/users/1')
+            let json = await response.json()
+            setData(json)
+        })()
+
+    })
     return (
         <div>
+            <h2>
+                {JSON.stringify(data)}
+            </h2>
             <form onSubmit={formSubmit}>
                 <br /><br />
                 <input type="text" onChange={(e) => change("fName", e.target.value)} value={obj.fName} placeholder="firstName" />
