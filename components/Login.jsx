@@ -9,7 +9,7 @@ export default function login() {
         <View>
             <Image source={require('./../assets/images/login.jpg')} style={{
                 width: '100%',
-                height: 650,
+                height: 300,
                 marginTop:60
             }} />
             <View style={styles.container}>
