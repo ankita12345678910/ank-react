@@ -5,7 +5,7 @@ import { useRouter } from 'expo-router'
 export default function ButtonCom(apple) {
     return (
         <View>
-            <button onClick={apple.onClick}>{apple.val}</button>
+            <Text onClick={apple.onClick}>{apple.val}</Text>
         </View>
     )
 }
