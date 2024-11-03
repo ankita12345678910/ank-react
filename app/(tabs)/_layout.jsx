@@ -10,6 +10,7 @@ export default function TabLayout() {
             <Tabs.Screen name="mytrip" />
             <Tabs.Screen name="discover" />
             <Tabs.Screen name="profile" />
+            <Tabs.Screen name="Myaccount" />
         </Tabs>
     )
 }
